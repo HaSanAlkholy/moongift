@@ -953,7 +953,7 @@ nav .nava-active .nava-content {
 .up {
   height: 50px;
   width: 50px;
-  background-color: #f846b4e8;
+  background-color: #d00e5580;
   right: 20px;
   bottom: 30px;
   color: white;
@@ -968,7 +968,7 @@ nav .nava-active .nava-content {
 }
 
 .up:hover {
-  color: black;
+  background-color: #f9005b;
 }
 
 .active-up {
