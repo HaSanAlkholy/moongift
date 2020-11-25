@@ -216,6 +216,12 @@
             span {
                 margin: 0 1px;
             }
+
+            @media(max-width:576px){
+                .now,.price-sale{
+                    font-size:15px;
+                }
+            }
         }
     }
 
@@ -488,10 +494,20 @@ nav {
                 border-radius: 8px;
                 transition: all 0.5s;
                 margin-inline-start: 20px;
+
+                &:hover{
+                    background-color: $color1;
+                    color: white;
+
+                    i{
+                        color:white;
+                    }
+                }
             }
 
             @media (max-width: 992px) {
                 & > div {
+                    font-size: 21px;
                     i {
                         margin-inline-end: 0px;
                     }
@@ -515,6 +531,15 @@ nav {
                     span {
                         display: none;
                     }
+
+                    &:hover{
+                        background-color: transparent;
+                        color: $color1;
+    
+                        i{
+                            color:$color1;
+                        }
+                    }
                 }
             }
         }
@@ -522,7 +547,6 @@ nav {
         .nav-icons-sm {
             justify-content: flex-start;
             align-items: center;
-            font-size: 16px;
             width: 33%;
             display: none;
 
@@ -535,6 +559,10 @@ nav {
 
             @media (max-width: 992px) {
                 display: flex;
+
+                div{
+                    font-size: 21px;
+                }
             }
         }
     }
@@ -813,12 +841,6 @@ nav {
             color: rgb(97, 97, 97);
             outline: none;
             transition: all 0.5s;
-
-            &:-webkit-autofill,
-            &:-webkit-autofill:hover,
-            &:-webkit-autofill:focus {
-                background-color: transparent;
-            }
 
             &:focus {
                 border: 2px solid $color1;
@@ -1108,10 +1130,7 @@ header {
                 width: 33%;
             }
             @media (max-width: 992px) {
-                width: 50%;
-            }
-            @media (max-width: 768px) {
-                width: 100%;
+                width: 47%;
             }
         }
     }
